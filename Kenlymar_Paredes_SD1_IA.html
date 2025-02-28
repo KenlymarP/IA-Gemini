@@ -56,9 +56,9 @@
     import { GoogleGenerativeAI } from "@google/generative-ai";
 
     // Fetch your API_KEY
-    const API_KEY = "AIzaSyD9gaqhQrBsOCW7eR9Zt61pVG4XZl9Exwo";
+    const API_KEY = "AIzaSyDzU5U3g6-oMiMW7IPz3hObijANo6TZcVQ";
 
-    // Access your API key (see "Set up your API key" above)
+    // Llamando al modelo
     const genAI = new GoogleGenerativeAI(API_KEY);
 
     // Llamado a la API de Gemini
@@ -67,7 +67,7 @@
       .addEventListener("click", async (event) => {
         event.preventDefault();
         const input = document.getElementById("floatingTextarea").value;
-        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
         const prompt = input;
         try {
           const result = await model.generateContent(prompt);
