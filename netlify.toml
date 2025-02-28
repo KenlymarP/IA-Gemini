@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/"
+  to = "/Kenlymar_Paredes_SD1_IA.html" # Reemplaza "tu-archivo.html" con el nombre de tu archivo
+  status = 200
